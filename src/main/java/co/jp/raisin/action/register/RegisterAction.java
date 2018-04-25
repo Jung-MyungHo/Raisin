@@ -1,4 +1,4 @@
-package co.jp.raisin.action;
+package co.jp.raisin.action.register;
 
 import com.opensymphony.xwork2.ActionSupport;
 

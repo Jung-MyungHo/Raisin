@@ -10,9 +10,14 @@
 
         <default-action-ref name="index"/>
 
-        <action name="Register" class="co.jp.raisin.action.RegisterAction">
+        <action name="Register" class="co.jp.raisin.action.register.RegisterAction">
             <result name="input">/vm/UserRegister.vm</result>
             <result name="success">/vm/UserRegister.vm</result>
+        </action>
+        
+        <action name="Login" class="co.jp.raisin.action.login.LoginAction">
+            <result name="input">/jsp/Login.jsp</result>
+            <result name="success">/jsp/Result.jsp</result>
         </action>
 
     </package>
