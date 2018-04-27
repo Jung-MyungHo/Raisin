@@ -2,19 +2,30 @@
 <!DOCTYPE struts PUBLIC
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
+
 <struts>
-    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
-    <constant name="struts.devMode" value="true"/>
+  <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+  <constant name="struts.devMode" value="true"/>
 
-    <package name="default" namespace="/" extends="struts-default">
+  <package name="default" namespace="/" extends="struts-default">
 
-        <default-action-ref name="index"/>
+    <interceptors>
+      <interceptor name="login" class="co.jp.raisin.interceptor.LoginInterceptor" />
+      <interceptor-stack name="defaultLoginStack">
+        <interceptor-ref name="login" />
+        <interceptor-ref name="defaultStack" />
+      </interceptor-stack>
+    </interceptors>
 
-        <action name="Register" class="co.jp.raisin.action.RegisterAction">
-            <result name="input">/vm/UserRegister.vm</result>
-            <result name="success">/vm/UserRegister.vm</result>
-        </action>
+    <default-interceptor-ref name="defaultLoginStack"/>
 
-    </package>
+    <action name="Login" class="co.jp.raisin.action.login.LoginAction">
+      <result name="error">/WEB-INF/jsp/Error.jsp</result>
+      <result name="input">/WEB-INF/jsp/Login.jsp</result>
+      <result name="login">/WEB-INF/jsp/Login.jsp</result>
+      <result name="success">/WEB-INF/jsp/Result.jsp</result>
+    </action>
+
+  </package>
 
 </struts>
