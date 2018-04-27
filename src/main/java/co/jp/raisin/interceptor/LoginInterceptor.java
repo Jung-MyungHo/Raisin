@@ -2,6 +2,8 @@ package co.jp.raisin.interceptor;
 
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.struts2.dispatcher.HttpParameters;
 
 import com.opensymphony.xwork2.ActionInvocation;
@@ -20,9 +22,10 @@ import co.jp.raisin.constant.Constants;
 public class LoginInterceptor extends AbstractInterceptor {
 
   private static final long serialVersionUID = -5640918453689284170L;
+  private static final Logger LOG = LogManager.getLogger(LoginInterceptor.class);
 
   @Override
-  public String intercept(ActionInvocation invocation) throws Exception {
+  public String intercept(ActionInvocation invocation) {
     try {
 
       Map<String, Object> session = invocation.getInvocationContext().getSession();
@@ -39,7 +42,7 @@ public class LoginInterceptor extends AbstractInterceptor {
       return invocation.invoke();
 
     } catch (Exception e) {
-      // TODO ログ必要
+      LOG.error(e.getMessage());
       return Constants.MODE_ERROR;
     }
   }
