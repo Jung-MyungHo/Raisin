@@ -9,8 +9,6 @@ import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
 import co.jp.raisin.bean.LoginBean;
 import co.jp.raisin.constant.Constants;
-import lombok.Getter;
-import lombok.Setter;
 
 /**
  * ログイン認証を行う
@@ -22,10 +20,6 @@ import lombok.Setter;
 public class LoginInterceptor extends AbstractInterceptor {
 
   private static final long serialVersionUID = -5640918453689284170L;
-
-  @Getter
-  @Setter
-  private LoginBean loginBean;
 
   @Override
   public String intercept(ActionInvocation invocation) throws Exception {
