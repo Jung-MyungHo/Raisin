@@ -48,7 +48,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
 
     // エラーがあれば抜ける
     if (hasErrors()) {
-      return true;
+      return false;
     }
 
     // 情報取得
