@@ -7,7 +7,8 @@
   <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
   <constant name="struts.devMode" value="true"/>
 
-  <package name="default" namespace="/" extends="struts-default">
+  <!-- サービス -->
+  <package name="api" namespace="/api" extends="struts-default">
 
     <interceptors>
       <interceptor name="login" class="co.jp.raisin.interceptor.LoginInterceptor" />
@@ -19,11 +20,24 @@
 
     <default-interceptor-ref name="defaultLoginStack"/>
 
-    <action name="Login" class="co.jp.raisin.action.login.LoginAction">
-      <result name="error">/WEB-INF/jsp/Error.jsp</result>
-      <result name="input">/WEB-INF/jsp/Login.jsp</result>
-      <result name="login">/WEB-INF/jsp/Login.jsp</result>
-      <result name="success">/WEB-INF/jsp/Result.jsp</result>
+    <action name="Login" class="co.jp.raisin.action.api.login.LoginAction">
+      <result name="error">/WEB-INF/page/Error.jsp</result>
+      <result name="input">/WEB-INF/page/Login.jsp</result>
+      <result name="login">/WEB-INF/page/Login.jsp</result>
+      <result name="success">/WEB-INF/page/Result.jsp</result>
+    </action>
+
+  </package>
+
+  <!-- 画面遷移 -->
+  <package name="app" namespace="/app" extends="struts-default">
+
+    <action name="Company" class="co.jp.raisin.action.app.CompanyPageAction">
+      <result name="success">/WEB-INF/page/Company.jsp</result>
+    </action>
+
+    <action name="Home" class="co.jp.raisin.action.app.HomePageAction">
+      <result name="success">/WEB-INF/page/Index.jsp</result>
     </action>
 
   </package>

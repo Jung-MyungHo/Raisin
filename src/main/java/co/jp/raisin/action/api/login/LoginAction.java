@@ -1,4 +1,4 @@
-package co.jp.raisin.action.login;
+package co.jp.raisin.action.api.login;
 
 import java.io.IOException;
 import java.util.Map;
