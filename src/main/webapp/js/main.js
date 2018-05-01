@@ -90,3 +90,21 @@ function click_Home(){
   homeBtn.appendTo('body');
   homeBtn.submit();
 }
+
+function click_Product(){
+  var productBtn = $('<form>').attr({
+	action: '/raisin/app/Product',
+    method : 'post',
+  });
+  productBtn.appendTo('body');
+  productBtn.submit();
+}
+
+function click_Recruit(){
+  var recruitBtn = $('<form>').attr({
+	action: '/raisin/app/Recruit',
+    method : 'post',
+  });
+  recruitBtn.appendTo('body');
+  recruitBtn.submit();
+}

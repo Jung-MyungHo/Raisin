@@ -40,6 +40,14 @@
       <result name="success">/WEB-INF/page/Index.jsp</result>
     </action>
 
+    <action name="Product" class="co.jp.raisin.action.app.ProductPageAction">
+      <result name="success">/WEB-INF/page/Product.jsp</result>
+    </action>
+
+    <action name="Recruit" class="co.jp.raisin.action.app.RecruitPageAction">
+      <result name="success">/WEB-INF/page/Recruit.jsp</result>
+    </action>
+
   </package>
 
 </struts>
