@@ -1309,6 +1309,12 @@
 				min-height: 155px;
 				position: relative;
 			}
+				#header p.login_time {
+					position: absolute;
+					right: 0;
+					top: 20px;
+					font-size: 1em;
+				}
 
 				#header h1 {
 					position: absolute;
@@ -1790,7 +1796,7 @@
 						position: absolute;
 						width: 20px;
 						height: 30px;
-						background: url("images/mobileUI-site-nav-opener-bg.svg");
+						background: url("/raisin/css/mobileUI-site-nav-opener-bg.svg");
 						top: 15px;
 						left: 20px;
 						z-index: 1;
@@ -1822,7 +1828,7 @@
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: url("/raisin/images/bg04.png");
+				background: url("/raisin/images/bg01.jpg");
 				box-shadow: inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25), inset -2px 0px 25px 0px rgba(0, 0, 0, 0.5);
 				text-shadow: -1px -1px 1px black;
 			}
