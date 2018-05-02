@@ -108,3 +108,30 @@ function click_Recruit(){
   recruitBtn.appendTo('body');
   recruitBtn.submit();
 }
+
+function click_Map(){
+  var mapBtn = $('<form>').attr({
+	action: '/raisin/app/Map',
+    method : 'post',
+  });
+  mapBtn.appendTo('body');
+  mapBtn.submit();
+}
+
+function click_Sec1(){
+  var sec1Btn = $('<form>').attr({
+	action: '/raisin/app/Sec1',
+    method : 'post',
+  });
+  sec1Btn.appendTo('body');
+  sec1Btn.submit();
+}
+
+function click_Sec2(){
+  var sec2Btn = $('<form>').attr({
+	action: '/raisin/app/Sec2',
+    method : 'post',
+  });
+  sec2Btn.appendTo('body');
+  sec2Btn.submit();
+}

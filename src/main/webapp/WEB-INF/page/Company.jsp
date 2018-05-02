@@ -33,7 +33,7 @@
           <div class="container">
             <div class="row">
               <div class="12u">
-
+<section>
                 <!-- Main Content -->
                 <div>
                   <h2>会　社　情　報</h2>
@@ -63,6 +63,7 @@
                 システム設計<br>
                 ソフトウェア開発受託<br>
                 人材リソースサービス</p>
+</section>
               </div>
             </div>
           </div>

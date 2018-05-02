@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
-    <title>レーズン株式会社</title>
+    <title>レーズン株式会社 会社情報</title>
     <meta http-equiv="expires" content="sat, 29 april 2017 00:00:01 GMT">
     <meta name="description" content="レーズン株式会社, システム設計, ソフトウェア開発受託, 人材リソースサービス">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/raisin/css/main.css" />
   </head>
 
-  <body>
+  <body class="subpage">
     <div id="page-wrapper">
 
       <!-- Header -->
@@ -36,37 +36,12 @@
 <section>
                 <!-- Main Content -->
                 <div>
-                  <h2>採　用　情　報</h2>
+                  <h2>アクセス</h2>
+                  <h3>東京都渋谷区代々木３ー４６ー１６　小野木ビル２０６号</h3>
                 </div>
-                <h3>募集時期</h3>
-                <p>随時採用</p>
-
-                <h3>応募資格</h3>
-                <p>仕事に固い意志と情熱がある者<br>
-                海外勤務に欠格事由がない者<br>
-                SE・PG</p>
-
-                <h3>提出書類</h3>
-                <p>経歴社員 ： 経歴書、自己紹介書<br>
-                新入社員 ： 履歴書、自己紹介書、資格証明書</p>
-
-                <h3>採用方法</h3>
-                <p>メール受付及び訪問受付</p>
-
-                <h3>給与</h3>
-                <p>経歴・能力を考慮の上、当社規定により優遇します。</p>
-
-                <h3>勤務時間</h3>
-                <p>９：００ - １８：００<br>
-                休日：土曜、日曜、祝日、慶弔休暇等</p>
-
-                <h3>提出先</h3>
-                <p>〒１５１ー００５３ <br>
-                東京都渋谷区代々木３ー４６ー１６　小野木ビル２０６号<br>
-                <br>
-                ＴＥＬ：（代表）０３−６２７６−２５９２<br>
-                メール： recruit@raisin-j.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d597.573241297677!2d139.6952535002858!3d35.68169968257388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c66e8bdf770a7b3!2z5bCP6YeO5pyo44OT44Or!5e0!3m2!1sko!2sjp!4v1496484594180" width="100%" height="450" style="border:0"></iframe>
 </section>
+
               </div>
             </div>
           </div>
@@ -75,7 +50,6 @@
 
       <!-- Copyright -->
       <div id="copyright"></div>
-
     </div>
   </body>
 </html>

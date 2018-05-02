@@ -34,6 +34,7 @@
             <div class="row">
               <div class="12u">
 
+<section>
                 <!-- Main Content -->
                 <div>
                   <h2>事　業　内　容</h2>
@@ -63,7 +64,7 @@
                   アウトソーシング・サービスを提供する。<br>
                   ソフトウェア資源、ユーティリティ・コンピューティングの維持管理
                 </p>
-
+</section>
               </div>
             </div>
           </div>

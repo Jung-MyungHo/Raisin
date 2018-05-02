@@ -48,6 +48,18 @@
       <result name="success">/WEB-INF/page/Recruit.jsp</result>
     </action>
 
+    <action name="Map" class="co.jp.raisin.action.app.MapPageAction">
+      <result name="success">/WEB-INF/page/Map.jsp</result>
+    </action>
+
+    <action name="Sec1" class="co.jp.raisin.action.app.Sec1PageAction">
+      <result name="success">/WEB-INF/page/Sec1.jsp</result>
+    </action>
+
+    <action name="Sec2" class="co.jp.raisin.action.app.Sec2PageAction">
+      <result name="success">/WEB-INF/page/Sec2.jsp</result>
+    </action>
+
   </package>
 
 </struts>
